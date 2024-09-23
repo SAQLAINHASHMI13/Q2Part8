@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#FFF3E0"> <!-- Light Orange Background -->
+
+    <!-- Input field for volume -->
+    <EditText
+        android:id="@+id/et_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Volume"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Spinner for selecting the input unit -->
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Spinner for selecting the output unit -->
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Button to convert the volume -->
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="24dp" />
+
+    <!-- TextView to display the result -->
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Volume: "
+        android:textSize="18sp"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
